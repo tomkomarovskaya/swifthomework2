@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         //ДЗ от 28 ноября 2023, Тамара Комаровская
         
-        //универсальные функции сложения, вычитания, умножения и деления (перегрузка функций)
+        //Задание 1: универсальные функции сложения, вычитания, умножения и деления (перегрузка функций)
         
         func mathFunc (a: Int, b: Int) -> Int {
             return a + b
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         print(mathFunc(number1: 8, multiply: 8))
         
-        //вычислить сумму цифр четырехзначного числа
+        //Задание 2: вычислить сумму цифр четырехзначного числа
         
         func digitSum(fourDigit : Int) -> Int {
             var fourDigit = fourDigit
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
 
         print(digitSum(fourDigit: 1234))
         
-        // функция сравнения строк - "авб" больше "ввш"
+        // Задание 3: функция сравнения строк - "авб" больше "ввш"
         
         func compareStrings(stringA: String, stringB: String) -> String {
             if stringA > stringB {
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         
         print(compareStrings(stringA: "авб", stringB: "ввш"))
         
-        //циклический вызов функций - поломать приложение. 
+        //Задание 4: циклический вызов функций - поломать приложение.
         //приложение поломается, потому что мы не задали условия прерывания вызова функции.
         func countDown(number1: Int) {
             print(number1)
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         countDown(number1: 4)
             
         
-        //функция возведения в степень с дефолтным параметром
+        //Задание 5: функция возведения в степень с дефолтным параметром
         func degreeFunc(_ number: Double = 5.0, degree: Double) -> Double {
             let inDegree = pow(number, degree)
             return inDegree
